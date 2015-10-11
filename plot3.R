@@ -14,7 +14,7 @@ subSetData$Datetime = as.POSIXct(paste(as.Date(subSetData$Date, format="%d/%m/%Y
 png("plot3.png", width=480, height=480)
 
 # Plot the data for Sub Metering 1
-plot(subSetData$Datetime, as.numeric(subSetData$Sub_metering_1), type="l", ylab="Energy Submetering", xlab="")
+plot(subSetData$Datetime, as.numeric(subSetData$Sub_metering_1), type="l", ylab="Energy sub metering", xlab="")
 
 # Add Sub Metering 2
 lines(subSetData$Datetime, as.numeric(subSetData$Sub_metering_2), type="l", col="red")
